@@ -4,7 +4,7 @@ var mysql = require('mysql');
 var config = require('./config');
 var pool = mysql.createPool({
 	connectionLimit: 10,
-	host: config.db.host,
+	host: config.db.hostname,
 	user: config.db.username,
 	password: config.db.password,
 	database: config.db.database
